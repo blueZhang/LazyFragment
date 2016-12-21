@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(mAdapter);
         viewPager.setOffscreenPageLimit(itemCount);
 
-        //将viewpager与indicator绑定
+        //viewpager bind with indicator
         indicator.setDatas(mDatas);
         indicator.setViewPager(viewPager);
     }

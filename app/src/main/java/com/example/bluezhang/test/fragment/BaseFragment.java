@@ -65,16 +65,16 @@ public abstract class BaseFragment extends Fragment {
 
     private void lazyLoadData() {
         if (isFirstLoad) {
-            Log.e(getClass().getSimpleName(),"第一次加载 " + " isInitView  " + isInitView + "  isVisible  " + isVisible + "   " + this.getClass().getSimpleName());
+            Log.e(getClass().getSimpleName(),"the first load  " + " isInitView  " + isInitView + "  isVisible  " + isVisible + "   " + this.getClass().getSimpleName());
         } else {
-            Log.e(getClass().getSimpleName(),("不是第一次加载" + " isInitView  " + isInitView + "  isVisible  " + isVisible + "   " + this.getClass().getSimpleName()));
+            Log.e(getClass().getSimpleName(),("not the first load " + " isInitView  " + isInitView + "  isVisible  " + isVisible + "   " + this.getClass().getSimpleName()));
         }
         if (!isFirstLoad || !isVisible || !isInitView) {
-            Log.e(getClass().getSimpleName(),"不加载" + "   " + this.getClass().getSimpleName());
+            Log.e(getClass().getSimpleName(),"don't load " + "   " + this.getClass().getSimpleName());
             return;
         }
 
-        Log.e(getClass().getSimpleName(),"完成数据第一次加载");
+        Log.e(getClass().getSimpleName(),"Data first load finished .");
         initData();
         isFirstLoad = false;
     }
@@ -86,7 +86,6 @@ public abstract class BaseFragment extends Fragment {
     protected abstract int getLayoutId() ;
 
     /**
-     * fragment中可以通过这个方法直接找到需要的view，而不需要进行类型强转
      * @param viewId
      * @param <E>
      * @return

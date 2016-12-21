@@ -9,18 +9,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
-        android:background="@color/red">
+        android:background="@color/red"
+        android:gravity="center">
 
         <com.example.bluezhang.test.fragment.ViewPagerIndicator
             android:id="@+id/indicator"
             android:layout_width="200dp"
-            android:layout_height="36dp"></com.example.bluezhang.test.fragment.ViewPagerIndicator>
+            android:layout_height="36dp" />
     </LinearLayout>
 
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        android:layout_height="match_parent" />
 </LinearLayout>
